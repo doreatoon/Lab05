@@ -1,0 +1,26 @@
+{
+  "name": "joke-project",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "build:client": "tsc public/main.ts --target ES2020 --module ES2020 --outDir public"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.19.3",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
